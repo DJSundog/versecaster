@@ -1,0 +1,108 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  max-width: 600px;
+}
+
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: cyan;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+main {
+  display: inline-flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+section {
+  min-height: 200px;
+  min-width:  200px;
+  margin:  auto;
+  padding: 2px;
+  border:  2px solid black;
+}
+
+#authButton {
+  align-self: flex-start;
+}
+
+video {
+  display: none;
+}
+
+.videooutput {
+  display: inline-flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+
+.deckDisplay {
+  display: inline-flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.deckControls {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
