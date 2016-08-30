@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>versecaster</title>
+    <meta name="description" content="A cool thing made with HyperDev">
+    <link id="favicon" rel="icon" href="https://hyperdev.com/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <main id="app">
+      <button id="authButton">Tap to authorize scanning local A/V devices</button>
+      <section id="audioInputs">
+        <h2>Audio Inputs</h2>
+      </section>
+      <section id="videoInputs">
+        <h2>Video Inputs</h2>
+      </section>
+      <section id="videoOutputs">
+        <h2>Video Outputs</h2>
+        <div class="deckDisplay">
+          <canvas id="testVideoOutput"></canvas>
+          <div class="deckControls">
+            <button id="deckAfade">Deck A</button><input id="crossfader" type="range" min="0" max="100" step="2" value="50" style="width:50%"><button id="deckBfade">Deck B</button>
+          </div>
+          <button id="recordingControl">Start recording</button>
+        </div>
+      </section>
+      <section id="audioOutputs">
+        <h2>Audio Outputs</h2>
+      </section>
+      <section id="decks">
+        <h2>Decks</h2>
+      </section>
+    </main>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="https://cdn.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
