@@ -292,15 +292,7 @@ const updateVideoOutputs = () => {
   }
 
   // send output over websocket
-  //
-  // n.b. there's way too much data in a
-  //      1280x720 image to pull this off
-  //      with any reasonable framerate
-  //
-  // var outputImage = canvas.toDataURL();
-  // socket.emit('webcastOutput', {image: outputImage});
   
-  // do it again
   requestAnimationFrame(updateVideoOutputs);
 };
 
